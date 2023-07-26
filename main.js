@@ -50,20 +50,56 @@
 
 // Crea un array vuoto e chiedi all'utente un numero da inserire nell'array. Continua a chiedere i numeri all'utente e a inserirli nell'array fino a quando la somma degli elementi è minore di 50.
 
-const myArr = [];
+// const myArr = [];
 
-let sum = 0;
+// let sum = 0;
 
-while (sum < 50) {
+// while (sum < 50) {
 
-    const newNum = parseInt(prompt("inserisci un numero"));
-    sum += newNum;
+// const newNum = parseInt(prompt("inserisci un numero"));
+// sum += newNum;
 
-    myArr.push(newNum)
+// myArr.push(newNum)
 
-    console.log(newNum)
-    console.log(sum)
+// console.log(newNum)
+// console.log(sum)
+
+// }
+
+// const numEle = myArr.length
+// const media = sum / numEle
+
+// console.log(media)
+
+
+// Crea un array vuoto e chiedi all'utente un numero da inserire nell'array. Continua a chiedere i numeri all'utente e a inserirli nell'array fino a quando la somma degli elementi è minore di 50.
+// Calcola la media dei numeri inseriti.
+
+
+
+
+
+// Trovare gli errori nel seguente codice:
+
+// --------------------------
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+let evenNumbers = [];   // [] mancanti
+for (let i = 0; i < numbers.length - 1; i++) {  // il ;
+
+    const number = numbers[i];
+    console.log(number)
+    if (number % 2 != 0 && number <= 5) {                 // != e il ; dopo l'if
+        evenNumbers.push(number);
+    }
 
 
 
 }
+console.log(evenNumbers);
+
+    // dovrebbe restituire [1,3,5]
+// --------------------------
+
+
+
+
